@@ -6,9 +6,8 @@
     .dependencies = .{},
 
     .paths = .{
-        "build.zig",
+        "glfw3.zig",
         "build.zig.zon",
-        "src",
         "LICENSE.md",
         "README.md",
     },
