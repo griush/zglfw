@@ -12,4 +12,7 @@ exe.root_module.addAnonymousImport("zglfw", .{
     .target = target,
     .optimize = optimize,
 });
+
+exe.addLibraryPath(zglfw.path("bin/windows/"));
+exe.linkSystemLibrary("glfw3");
 ```
