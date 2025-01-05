@@ -15,8 +15,8 @@ module.addAnonymousImport("glfw", .{
 });
 
 if (builtin.os.tag == .windows) {
-    exe.addLibraryPath(zglfw.path("bin/windows/"));
-    exe.linkSystemLibrary("Gdi32");
+    module.addLibraryPath(zglfw.path("bin/windows-mingw64/"));
+    module.linkSystemLibrary("Gdi32");
 }
-exe.linkSystemLibrary("glfw3");
+module.linkSystemLibrary("glfw3");
 ```
